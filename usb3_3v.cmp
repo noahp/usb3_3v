@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 9/16/2014 8:37:22 AM
+
+BeginCmp
+TimeStamp = /54182CC9;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54182C9D;
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54182DC6;
+Reference = J1;
+ValeurCmp = USB-MICRO-B;
+IdModule  = usb_micro_b_smt;
+EndCmp
+
+BeginCmp
+TimeStamp = /54182DD5;
+Reference = P1;
+ValeurCmp = TST;
+IdModule  = TEST_0.100;
+EndCmp
+
+BeginCmp
+TimeStamp = /54182DE2;
+Reference = P2;
+ValeurCmp = TST;
+IdModule  = TEST_0.100;
+EndCmp
+
+BeginCmp
+TimeStamp = /54182BF8;
+Reference = U1;
+ValeurCmp = AAT3221 / MIC5504;
+IdModule  = sot23-5_noah;
+EndCmp
+
+EndListe
