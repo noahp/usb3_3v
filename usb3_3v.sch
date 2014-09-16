@@ -83,9 +83,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3800 6500 3800
 Wire Wire Line
-	5100 4100 4950 4100
-Wire Wire Line
-	4950 3550 4950 4300
+	4950 4100 5100 4100
 Connection ~ 4950 3800
 $Comp
 L GND #PWR01
@@ -98,7 +96,6 @@ F 3 "" H 4950 4300 60  0000 C CNN
 	1    4950 4300
 	1    0    0    -1  
 $EndComp
-Connection ~ 4950 4100
 $Comp
 L GND #PWR02
 U 1 1 54182CFC
@@ -118,8 +115,7 @@ Wire Wire Line
 	6500 4200 6350 4200
 Connection ~ 6350 4200
 Wire Wire Line
-	4950 4200 4800 4200
-Connection ~ 4950 4200
+	4800 4200 5000 4200
 Text Label 4950 3550 0    60   ~ 0
 +5v
 Wire Wire Line
@@ -204,4 +200,56 @@ F 3 "" H 3950 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3950 4050
+Wire Wire Line
+	4950 4300 4950 4200
+Wire Wire Line
+	4950 3550 4950 4100
+Wire Wire Line
+	5100 3950 5000 3950
+Wire Wire Line
+	5000 3950 5000 4200
+Connection ~ 4950 4200
+$Comp
+L LED D1
+U 1 1 541830EB
+P 6250 4800
+F 0 "D1" H 6250 4900 50  0000 C CNN
+F 1 "LED" H 6250 4700 50  0000 C CNN
+F 2 "~" H 6250 4800 60  0000 C CNN
+F 3 "~" H 6250 4800 60  0000 C CNN
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5950 4800 2    60   ~ 0
++3.3v
+Wire Wire Line
+	5950 4800 6050 4800
+$Comp
+L R R1
+U 1 1 54183114
+P 6800 4800
+F 0 "R1" V 6880 4800 40  0000 C CNN
+F 1 "1K" V 6807 4801 40  0000 C CNN
+F 2 "~" V 6730 4800 30  0000 C CNN
+F 3 "~" H 6800 4800 30  0000 C CNN
+	1    6800 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 4800 6550 4800
+$Comp
+L GND #PWR05
+U 1 1 54183142
+P 7150 4900
+F 0 "#PWR05" H 7150 4900 30  0001 C CNN
+F 1 "GND" H 7150 4830 30  0001 C CNN
+F 2 "" H 7150 4900 60  0000 C CNN
+F 3 "" H 7150 4900 60  0000 C CNN
+	1    7150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4900 7150 4800
+Wire Wire Line
+	7150 4800 7050 4800
 $EndSCHEMATC
