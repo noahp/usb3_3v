@@ -5,7 +5,7 @@
     (no_connects 4)
     (area 211.767 139.141999 235.339 150.418001)
     (thickness 1.6)
-    (drawings 9)
+    (drawings 12)
     (tracks 19)
     (zones 0)
     (modules 8)
@@ -106,10 +106,10 @@
     (add_net N-000007)
   )
 
-  (module usb_micro_b_smt (layer F.Cu) (tedit 54183121) (tstamp 54182F35)
+  (module usb_micro_b_smt (layer F.Cu) (tedit 5419913F) (tstamp 54182F35)
     (at 214.63 144.78 270)
     (path /54182DC6)
-    (fp_text reference J1 (at 3.302 -4.826 360) (layer F.SilkS)
+    (fp_text reference J1 (at 3.302 -4.445 360) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.12)))
     )
     (fp_text value USB-MICRO-B (at 0 2.159 270) (layer F.SilkS) hide
@@ -220,12 +220,12 @@
     )
   )
 
-  (module SM0402_c (layer F.Cu) (tedit 516FD0AE) (tstamp 54182F55)
+  (module SM0402_c (layer F.Cu) (tedit 54199118) (tstamp 54182F55)
     (at 224.282 142.24 180)
     (path /54182C9D)
     (attr smd)
-    (fp_text reference C2 (at 0 0 180) (layer F.SilkS)
-      (effects (font (size 0.35052 0.3048) (thickness 0.07112)))
+    (fp_text reference C2 (at 1.651 0 180) (layer F.SilkS)
+      (effects (font (size 0.75 0.75) (thickness 0.12)))
     )
     (fp_text value 1uF (at 0.09906 0 180) (layer F.SilkS) hide
       (effects (font (size 0.35052 0.3048) (thickness 0.07112)))
@@ -282,11 +282,11 @@
     )
   )
 
-  (module SM0402_r (layer F.Cu) (tedit 541830D6) (tstamp 54183078)
+  (module SM0402_r (layer F.Cu) (tedit 5419911C) (tstamp 54183078)
     (at 224.282 140.716 180)
     (path /54183114)
     (attr smd)
-    (fp_text reference R1 (at 1.778 0 180) (layer F.SilkS)
+    (fp_text reference R1 (at 1.651 0 180) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.12)))
     )
     (fp_text value 1K (at 0.09906 0 180) (layer F.SilkS) hide
@@ -313,11 +313,11 @@
     )
   )
 
-  (module SM0603 (layer F.Cu) (tedit 54183135) (tstamp 54183094)
+  (module SM0603 (layer F.Cu) (tedit 54199124) (tstamp 54183094)
     (at 227.33 141.605 90)
     (path /541830EB)
     (attr smd)
-    (fp_text reference D1 (at 0.127 -1.524 90) (layer F.SilkS)
+    (fp_text reference D1 (at 1.143 1.524 90) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.12)))
     )
     (fp_text value LED (at 0 0 90) (layer F.SilkS) hide
@@ -342,6 +342,9 @@
     )
   )
 
+  (gr_line (start 227.711 141.732) (end 227.33 141.351) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 226.949 141.732) (end 227.711 141.732) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 227.33 141.351) (end 226.949 141.732) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_text "github.com/\nnoahp/usb3_3v\nv0.1" (at 225.044 147.066) (layer F.Mask)
     (effects (font (size 0.75 0.75) (thickness 0.12)))
   )
@@ -371,8 +374,8 @@
   (segment (start 217.63 143.48) (end 220.345 143.48) (width 0.254) (layer F.Cu) (net 2))
   (segment (start 220.345 143.48) (end 221.9 143.48) (width 0.254) (layer F.Cu) (net 2) (tstamp 5418300B))
   (segment (start 221.9 143.48) (end 222.25 143.83) (width 0.254) (layer F.Cu) (net 2) (tstamp 54182FDC))
-  (segment (start 227.33 140.843) (end 227.203 140.716) (width 0.254) (layer F.Cu) (net 4) (status C00000))
-  (segment (start 227.203 140.716) (end 224.73158 140.716) (width 0.254) (layer F.Cu) (net 4) (tstamp 5418387D) (status C00000))
+  (segment (start 227.33 140.843) (end 227.203 140.716) (width 0.254) (layer F.Cu) (net 4))
+  (segment (start 227.203 140.716) (end 224.73158 140.716) (width 0.254) (layer F.Cu) (net 4) (tstamp 5418387D))
 
   (zone (net 3) (net_name GND) (layer F.Cu) (tstamp 541831D5) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
